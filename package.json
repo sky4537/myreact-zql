@@ -1,6 +1,6 @@
 {
   "name": "@sky4537/myreact-zql",
-  "version": "0.1.7",
+  "version": "0.1.6",
   "private": false,
   "peerDependencies": {
     "react": ">=16.8.0",
@@ -39,12 +39,16 @@
     ]
   },
   "dependencies": {
-    "polished": "^3.6.5"
+    "@types/prismjs": "^1.16.1",
+    "polished": "^3.6.5",
+    "prismjs": "^1.21.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3",
+    "styled-components": "^5.1.1",
+    "typescript": "~3.7.2"
   },
   "devDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0",
-    "styled-components": "^5.1.1",
     "@babel/core": "^7.11.1",
     "@storybook/addon-a11y": "^6.0.10",
     "@storybook/addon-actions": "^6.0.10",
@@ -57,7 +61,6 @@
     "@storybook/node-logger": "^6.0.10",
     "@storybook/preset-create-react-app": "^3.1.4",
     "@storybook/react": "^6.0.10",
-    "@types/styled-components": "^5.1.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -65,18 +68,18 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "@types/styled-components": "^5.1.2",
     "babel-loader": "^8.1.0",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
     "react-is": "^16.13.1",
     "react-scripts": "3.4.3",
+    "styled-components": "^5.1.1",
     "typescript": "~3.7.2"
   },
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/sky4537/myreact-zql",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/sky4537"
-  },
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "sideEffects": false
