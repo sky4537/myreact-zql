@@ -80,10 +80,6 @@
   "files": [
     "dist"
   ],
-  "np": {
-    "yarn": false,
-    "contents": "dist"
-  },
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "sideEffects": false
