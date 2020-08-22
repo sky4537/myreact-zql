@@ -14,7 +14,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook --no-dll --quiet",
-    "coverage": "react-scripts test --coverage --watchAll=false"
+    "coverage": "react-scripts test --coverage --watchAll=false",
+    "coverall": "npm run coverage  && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,6 +40,7 @@
     ]
   },
   "dependencies": {
+    "coveralls": "^3.1.0",
     "polished": "^3.6.5",
     "prismjs": "^1.21.0",
     "react": "^16.13.1",
@@ -65,10 +67,10 @@
     "@testing-library/user-event": "^7.1.2",
     "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
+    "@types/prismjs": "^1.16.1",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@types/styled-components": "^5.1.2",
-    "@types/prismjs": "^1.16.1",
     "babel-loader": "^8.1.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
