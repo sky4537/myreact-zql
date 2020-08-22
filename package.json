@@ -80,7 +80,18 @@
   "files": [
     "dist"
   ],
+  "np": {
+    "yarn": false,
+    "contents": "dist"
+  },
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "sideEffects": false
+  "sideEffects": false,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/sky4537"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sky4537/myreact-zql.git"
+  }
 }
