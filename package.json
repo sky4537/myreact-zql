@@ -1,6 +1,6 @@
 {
   "name": "@sky4537/myreact-zql",
-  "version": "0.1.6",
+  "version": "1.0.0",
   "private": false,
   "peerDependencies": {
     "react": ">=16.8.0",
@@ -15,7 +15,8 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook --no-dll --quiet",
     "coverage": "react-scripts test --coverage --watchAll=false",
-    "coverall": "npm run coverage  && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+    "coverall": "npm run coverage  && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "release": "npm run build & np"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -72,6 +73,8 @@
     "@types/react-dom": "^16.9.0",
     "@types/styled-components": "^5.1.2",
     "babel-loader": "^8.1.0",
+    "np": "^6.4.0",
+    "patch-package": "^6.2.2",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
     "react-is": "^16.13.1",
@@ -84,5 +87,12 @@
   ],
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "sideEffects": false
+  "sideEffects": false,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/sky4537"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sky4537/myreact-zql.git"
+  }
 }
