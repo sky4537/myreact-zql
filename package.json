@@ -1,6 +1,6 @@
 {
   "name": "@sky4537/myreact-zql",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "peerDependencies": {
     "react": ">=16.8.0",
