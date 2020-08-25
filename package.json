@@ -10,13 +10,14 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "tsc -p tsconfig.build.json",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook --no-dll --quiet",
     "coverage": "react-scripts test --coverage --watchAll=false",
     "coverall": "npm run coverage  && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
-    "release": "npm run build & np"
+    "release": "npm run build & np",
+    "postinstall": "patch-package"
   },
   "eslintConfig": {
     "extends": "react-app"
