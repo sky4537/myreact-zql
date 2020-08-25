@@ -16,7 +16,7 @@
     "build-storybook": "build-storybook --no-dll --quiet",
     "coverage": "react-scripts test --coverage --watchAll=false",
     "coverall": "npm run coverage  && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
-    "release": "npm run build & np",
+    "release": "np",
     "postinstall": "patch-package"
   },
   "eslintConfig": {
@@ -42,9 +42,7 @@
     ]
   },
   "dependencies": {
-    "coveralls": "^3.1.0",
-    "polished": "^3.6.5",
-    "prismjs": "^1.21.0"
+    "polished": "^3.6.5"
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",
@@ -69,6 +67,8 @@
     "@types/react-dom": "^16.9.0",
     "@types/styled-components": "^5.1.2",
     "babel-loader": "^8.1.0",
+    "prismjs": "^1.21.0",
+    "coveralls": "^3.1.0",
     "np": "^6.4.0",
     "patch-package": "^6.2.2",
     "react": ">=16.8.0",
