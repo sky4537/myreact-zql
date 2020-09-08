@@ -1,29 +1,25 @@
-import React, {
-  useState,
-} from "react";
-import { KeepAlive, AliveScope } from "./index.tsx";
-import {
-  withKnobs
-} from "@storybook/addon-knobs";
+import React, { useState } from 'react'
+import { KeepAlive, AliveScope } from './index.js'
+import { withKnobs } from '@storybook/addon-knobs'
 
 export default {
-  title: "Keepalive",
+  title: 'Keepalive',
   component: KeepAlive,
   decorators: [withKnobs],
-};
+}
 
 function Counter() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
   return (
     <div>
       count: {count}
       <button onClick={() => setCount((count) => count + 1)}>add</button>
     </div>
-  );
+  )
 }
 
 export const knobsKeepalive = () => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(true)
   return (
     <AliveScope>
       <div>
@@ -38,5 +34,5 @@ export const knobsKeepalive = () => {
         )}
       </div>
     </AliveScope>
-  );
-};
+  )
+}
